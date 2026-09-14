@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "jase.jarvis",
+  "name": "Jarvis Command Interface",
+  "version": "1.0.0",
+  "author": "Jase",
+  "description": "Theme-aware desktop HUD with live system telemetry and command overview",
+  "kinds": [
+    "service",
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "service": "Service.qml",
+    "barWidget": "Widget.qml"
+  },
+  "barWidget": {
+    "displayName": "Jarvis",
+    "category": "System",
+    "allowMultiple": false,
+    "defaultSection": "left",
+    "defaults": {},
+    "schema": []
+  },
+  "license": "MIT"
+}

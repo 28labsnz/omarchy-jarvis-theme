@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3072" height="2048" viewBox="0 0 1536 1024">
+<defs><pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#142632" stroke-width=".5"/></pattern><radialGradient id="halo"><stop stop-color="#113140"/><stop offset="1" stop-color="#060e15"/></radialGradient></defs>
+<path fill="#060e15" d="M0 0H1536V1024H0Z"/><ellipse cx="768" cy="512" rx="560" ry="490" fill="url(#halo)"/><path fill="url(#grid)" d="M0 0H1536V1024H0Z"/>
+<g fill="none" stroke="#234454"><circle cx="768" cy="512" r="240"/><circle cx="768" cy="512" r="221" stroke-dasharray="3 10"/><circle cx="768" cy="512" r="197"/><path d="M64 128H464M1072 128H1472M64 896H464M1072 896H1472"/></g>
+<g stroke="#00d9f5" fill="none"><path d="M528 512a240 240 0 0 1 240-240M1008 512a240 240 0 0 1-240 240" stroke-width="2"/><path d="M64 148V128H84M1472 148V128H1452M64 876V896H84M1472 876V896H1452"/></g>
+<text x="768" y="520" text-anchor="middle" fill="#a1c1d0" font-family="sans-serif" font-size="32" letter-spacing="12">J.A.R.V.I.S.</text><text x="768" y="548" text-anchor="middle" fill="#467385" font-family="monospace" font-size="9" letter-spacing="3">PERSONAL COMMAND INTERFACE</text></svg>

@@ -1,0 +1,17 @@
+#!/bin/bash
+set -euo pipefail
+case "${1:-toggle}" in
+  status) exec omarchy-shell jarvis status ;;
+  close) exec omarchy-shell jarvis close ;;
+  toggle)
+    if [[ $(omarchy theme current) != Jarvis ]]; then
+      omarchy theme set jarvis
+      for attempt in {1..20}; do
+        if omarchy-shell jarvis status | python3 -c 'import json,sys; sys.exit(not json.load(sys.stdin)["active"])'; then break; fi
+        sleep 0.2
+      done
+    fi
+    exec omarchy-shell jarvis toggle
+    ;;
+  *) printf 'Usage: jarvis [toggle|close|status]\n' >&2; exit 2 ;;
+esac
