@@ -6,15 +6,15 @@ import qs.Ui
 BarWidget {
     id: root
     moduleName: "jase.jarvis"
-    readonly property bool active: String(Color.accent).toLowerCase() === "#00d9f5"
+    readonly property bool active: String(Color.accent).toLowerCase() === "#00dfff"
     visible: active
-    implicitWidth: active ? 132 : 0
+    implicitWidth: active ? 145 : 0
     implicitHeight: barSize
     Row {
         anchors.centerIn: parent
         spacing: 9
-        Rectangle { width: 5; height: 5; radius: 3; color: "#48dfad"; anchors.verticalCenter: parent.verticalCenter }
-        Text { text: "J.A.R.V.I.S."; color: "#00d9f5"; font.family: "JetBrainsMono Nerd Font"; font.pixelSize: 12; font.letterSpacing: 1.5 }
+        Rectangle { width: 5; height: 5; radius: 3; color: "#00efb0"; anchors.verticalCenter: parent.verticalCenter }
+        Text { text: "J.A.R.V.I.S."; color: "#00dfff"; font.family: "Orbitron"; font.pixelSize: 10; font.letterSpacing: 1.5 }
     }
     MouseArea {
         anchors.fill: parent

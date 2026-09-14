@@ -14,7 +14,7 @@ Item {
     onActiveChanged: if (!active) overview = false
 
     Process {
-        command: ["python3", "-u", decodeURIComponent(Qt.resolvedUrl("telemetry.py").toString().replace("file://", ""))]
+        command: ["python3", "-u", Qt.resolvedUrl("telemetry.py").toString().replace("file://", "")]
         running: true
         stdout: SplitParser {
             onRead: data => {
@@ -47,7 +47,7 @@ Item {
             margins.bottom: root.shell && root.shell.bar && !root.shell.bar.barHidden && root.shell.bar.position === "bottom" ? root.shell.bar.barSize : 0
             margins.left: root.shell && root.shell.bar && !root.shell.bar.barHidden && root.shell.bar.position === "left" ? root.shell.bar.barSize : 0
             margins.right: root.shell && root.shell.bar && !root.shell.bar.barHidden && root.shell.bar.position === "right" ? root.shell.bar.barSize : 0
-            color: "#060e15"
+            color: "#030b12"
             exclusionMode: ExclusionMode.Ignore
             WlrLayershell.namespace: "jarvis-hud"
             WlrLayershell.layer: root.overview ? WlrLayer.Top : WlrLayer.Bottom

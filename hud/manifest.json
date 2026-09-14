@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "id": "jase.jarvis",
   "name": "Jarvis Command Interface",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "Jase",
-  "description": "Theme-aware desktop HUD with live system telemetry and command overview",
+  "description": "Home Assistant-inspired Jarvis HUD with animated reactor, circular controls and live local telemetry",
   "kinds": [
     "service",
     "bar-widget"
@@ -20,6 +20,5 @@
     "defaultSection": "left",
     "defaults": {},
     "schema": []
-  },
-  "license": "MIT"
+  }
 }
