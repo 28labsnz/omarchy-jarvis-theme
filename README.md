@@ -71,7 +71,7 @@ From your clone, run `git pull --ff-only`, then `python3 install.py`. This reapp
 
 The theme is at the repository root: `colors.toml`, `shell.toml`, and `backgrounds/`. Omarchy generates application configuration from the palette. The original vector wallpaper source is in `assets/wallpaper.svg`.
 
-The QML in `hud/` is installed as the `jase.jarvis` Omarchy plugin. `telemetry.py` reads `/proc` and `/sys`; it makes no network requests. CPU usage is measured between samples. Memory excludes available memory, storage refers to the filesystem holding your home directory, and network rates aggregate active non-loopback interfaces in KiB/s. The data shown is from the computer running the HUD.
+The QML in `hud/` is installed as the `jase.jarvis` Omarchy plugin. `telemetry.py` reads `/proc` and `/sys`; it makes no network requests. CPU usage is measured between samples. Memory excludes available memory, storage refers to the filesystem holding your home directory, and network rates aggregate active hardware interfaces, not Docker bridges or other virtual links, in KiB/s. The data shown is from the computer running the HUD.
 
 Installed paths:
 
